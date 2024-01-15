@@ -19,8 +19,8 @@ browser.find_element(By.ID, 'email').send_keys('email_teste@gmail.com')
 browser.find_element(By.ID, 'password').send_keys('Senha123')
 sleep(random)
 browser.find_element(By.ID, 'pgtpy-botao').click()
-#lendo a base de dados e salvando em um dataframe pandas
-produtos_df = pd.read_csv('produtos.csv')
+#lendo a base de dados que foi upada no github e salvando em um dataframe pandas
+produtos_df = pd.read_csv('https://github.com/viniciusBMontenegro/Bot_Selenium/raw/main/produtos.csv')
 
 for linha in produtos_df.index:   
 #localizando os itens do formulario e passando as informações
